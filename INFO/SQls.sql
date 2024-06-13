@@ -1,0 +1,9 @@
+CREATE DATABASE demo_db;
+
+CREATE TABLE employees(
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(256) NOT NULL,
+    surname VARCHAR(256) NOT NULL,
+    position VARCHAR(256) NOT NULL,
+    phone VARCHAR(32) NOT NULL
+);

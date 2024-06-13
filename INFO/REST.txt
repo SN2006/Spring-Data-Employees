@@ -1,0 +1,79 @@
+1) Получение всех данных
+
+GET
+http://localhost:8080/api/v1/employees
+
+2) Создание данных
+
+POST
+http://localhost:8080/api/v1/employees
+
+Body:
+
+(1)
+{
+    "name": "Danielle",
+    "surname": "Baker",
+    "position": "manager",
+    "phone": "050 045-0504"
+}
+
+(2)
+{
+    "name": "Len",
+    "surname": "Baker",
+    "position": "CEO",
+    "phone": "050 000-1111"
+}
+
+(3)
+{
+    "name": "Brian",
+    "surname": "Kennedy",
+    "position": "actor",
+    "phone": "068 456-4321"
+}
+
+3) Получение данных по id
+
+GET
+http://localhost:8080/api/v1/employees/2
+
+4) Получение данных по name
+
+GET
+http://localhost:8080/api/v1/employees/find-by-name?name=Len
+
+5) Получение данных по surname
+
+GET
+http://localhost:8080/api/v1/employees/find-by-surname?surname=Baker
+
+6) Получение данных по position
+
+GET
+http://localhost:8080/api/v1/employees/find-by-position?position=ceo
+
+5) Получение данных по phone
+
+GET
+http://localhost:8080/api/v1/employees/find-by-phone?phone=068 456-4321
+
+6) Обновление данных по id
+
+PUT
+http://localhost:8080/api/v1/employees/3
+
+body:
+
+{
+    "name": "Brian",
+    "surname": "Kennedy",
+    "position": "president",
+    "phone": "000 000-0001"
+}
+
+7) даление данных по id
+
+DELETE
+http://localhost:8080/api/v1/employees/2
